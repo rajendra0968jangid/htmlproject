@@ -1,0 +1,12 @@
+  p{
+            color: blue;
+        }
+        h1{
+            background-color: aqua;
+        }
+        div{
+            text-align: center;
+            border: 2px dashed orange;
+            border-radius: 40px;
+            padding: 20px;
+        }
