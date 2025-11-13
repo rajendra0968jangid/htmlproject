@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p></p>
+    <img src="" alt="">
+    <button onclick="one()">click</button>
+    <script>
+         async function one(){
+            let apiData = await fetch("https://api-v1.com/w/sV3.php?key=WZS") 
+            let jsonData = await apiData.json();
+            console.log(jsonData.k)
+            document.getElementsByTagName("p")[0].innerText = jsonData.k;
+            document.getElementsByTagName("img")[0].src =`https://cricketvectors.akamaized.net/players/org/${jsonData.b}.png`;
+        }
+
+    </script>
+</body>
+</html>
